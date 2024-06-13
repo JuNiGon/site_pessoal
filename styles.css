@@ -1,0 +1,77 @@
+/*-----------------------------------------------------BARRA SUPERIOR---------------------------------------------------*/
+.bar_superior {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: #333853;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 12px 35px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+.background_image {
+    width: 100%;
+    height: 80%;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover;
+    position: absolute;
+}
+
+
+/*---------------------------------------------BOTÕES BARRA SUPERIOR-------------------------------------------------*/
+.button_superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_superior_left {
+    display: flex;
+    padding-left: 85px;
+}
+.button_superior_right {
+    display: flex;
+    padding-right: 100px;
+}
+
+.button_superior_left_custon {
+    display: flex;         
+    padding: 8px 40px;       
+    text-align: center;       
+    text-decoration: none;    
+    font-size: 25px;          
+    margin: 0px 0px;           
+    cursor: pointer;           
+    font-family: "Pacifico", cursive;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    background-color: rgba(218, 57, 43, 1);
+}
+.button_superior_left_custon:hover {
+    color: white;
+    background-color: rgb(196, 41, 27);
+} 
+
+.button_superior_right_custon {
+    display: flex;            
+    padding: 20px 30px;       
+    text-align: center;       
+    text-decoration: none;    
+    font-size: 16px;          
+    margin: 0px 0px;           
+    cursor: pointer;           
+    font-family: helvetica, sans-serif; 
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #FAFAFA;
+}
+.button_superior_right_custon:hover {
+    color: white;
+    background-color: rgba(218, 57, 43, 1);
+} 
+/*---------------------------------------------------------------------------------------------------------------*/
