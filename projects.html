@@ -12,12 +12,16 @@
 </head>
 <body>
     <header>
+        <!----------------------------  área do logo ---------------------------->
         <div class="bar_superior">
             <p class="logo">JG</p>
         </div>
+        <!----------------------------------------------------------------------->
+
     </header>
 
     <main>
+        <!--------------------------  área dos botões --------------------------->
         <div class="button_superior">
             <div class="button_superior_left">
                 <a target="_self" href="index.html" class="button_superior_left_custon">Início</a>
@@ -31,16 +35,18 @@
                 <a target="_self" href="contact.html" class="button_superior_right_custon">Contato</a>
             </div>
         </div>
-        
-<!--------------------------  area de slides ---------------------------->
+        <!----------------------------------------------------------------------->
+
+ 
+        <!--------------------------  area de slides ---------------------------->
         <div class="content">
+            <input class="input_slide" type="radio" name="slide" id="slide_1" checked>
+            <input class="input_slide" type="radio" name="slide" id="slide_2">
+            <input class="input_slide" type="radio" name="slide" id="slide_3">
+            <input class="input_slide" type="radio" name="slide" id="slide_4">
+            <input class="input_slide" type="radio" name="slide" id="slide_5">
+
             <div class="slides">
-                <input class="input_slide" type="radio" name="slide" id="slide_1" checked>
-                <input class="input_slide" type="radio" name="slide" id="slide_2">
-                <input class="input_slide" type="radio" name="slide" id="slide_3">
-                <input class="input_slide" type="radio" name="slide" id="slide_4">
-                <input class="input_slide" type="radio" name="slide" id="slide_5">
-            
                 <div class="slide s1">
                     <img src="slide_show_projects/img_1.png" alt="">
                 </div>
@@ -57,19 +63,13 @@
                     <img src="slide_show_projects/img_5.jpeg" alt="">
                 </div>           
             </div>
+            <div class="nav-arrow nav-arrow-left" onclick="previousSlide()">&#10094;</div>
+            <div class="nav-arrow nav-arrow-right" onclick="nextSlide()">&#10095;</div>
         </div>
 
-        <div class="navigation">
-            <label class="bar" for="slide_1"></label>
-            <label class="bar" for="slide_2"></label>
-            <label class="bar" for="slide_3"></label>
-            <label class="bar" for="slide_4"></label>
-            <label class="bar" for="slide_5"></label>
-        </div>
+        <!---------------------------------------------------------------------->
 
-<!---------------------------------------------------------------------->
-
-        <section>
+        <section class="margin_slider">
             <h2>Fruta</h2>
             <p>Abacate</p>
         </section>
