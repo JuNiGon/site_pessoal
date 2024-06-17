@@ -19,6 +19,8 @@ main {
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 
+/*-----------------------------------------------------IMAGEM INICIO---------------------------------------------------*/
+
 .background_image {
     width: 100%;
     height: 620px;
@@ -28,12 +30,16 @@ main {
     background-size: cover;
     position: absolute;
 }
+/*---------------------------------------------------------------------------------------------------------------------*/
+
 
 
 /*---------------------------------------------BOTÕES BARRA SUPERIOR-------------------------------------------------*/
 .button_superior {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
+    position: relative;
 }
 
 .button_superior_left {
@@ -112,25 +118,68 @@ main {
 .content {
     transform: translate(-50%, -50%);
     position: absolute;
-    height: 520px;
-    width: 1000px;
+    height: 500px;
+    width: 1150px;
     overflow: hidden;
     left: 50%;
-    top: 340px;
+    top: 322px;
+    z-index: 0;
 }
 
 .content .slide img{
     height: 100%;
     width: 100%;
-    z-index: -1;
-    position: absolute;
 }
-/*
-.navegation {
-    display: fleex;
+
+.navigation {
+    transform: translate(-50%, -50%);
+    display: flex;
     position: absolute;
     bottom: 160px;
-    left: 500px;
+    left: 50%;
+    top: 580px; /*position*/
 }
-*/
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+.bar:hover {
+    background-color:  rgba(218, 57, 43, 1);
+}
+
+.input_slide{
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%; 
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+#slide_1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide_2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide_3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide_4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide_5:checked ~ .s1{
+    margin-left: -80%;
+}
 /*---------------------------------------------------------------------------------------------------------------*/
