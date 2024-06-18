@@ -1,9 +1,21 @@
 main {
-    background-color: rgba(246, 244, 240, 1);
+    background-color: #FAF7F7;
     padding: 0;
     margin: 0;
     width: 100%;
 }
+
+footer {
+    background-color: rgb(32, 30, 55);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
 /*--------------------------------------------------BARRA SUPERIOR LOGO-------------------------------------------------*/
 .bar_superior {
     display: flex;
@@ -21,16 +33,28 @@ main {
 
 /*-----------------------------------------------------IMAGEM(index)---------------------------------------------------*/
 .background_image {
-    width: 100%;
+    width: 1503px;
     height: 620px;
-    left: 0;
-    z-index: -1;
+    z-index: 0;
     object-fit: cover;
     background-size: cover;
     position: absolute;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------RODAPÉ-------------------------------------------------------*/
+.rodape {
+    color: white;
+    padding-bottom: 30px;
+}
+.logo_rodape {
+    color: #333853;
+    font-size: 55px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
 
 
 /*---------------------------------------------BOTÕES BARRA SUPERIOR-------------------------------------------------*/
@@ -94,6 +118,8 @@ main {
     display: flex;
     margin-top: 110px;
     justify-content: space-between;
+    z-index: 1;
+    position: relative;
 }
 .my_name {
     color: rgb(32, 30, 55);
@@ -103,10 +129,12 @@ main {
     font-family: "arial", sans-serif;
 }
 .my_formation {
+    position: relative;
+    z-index: 1;
     color: rgb(32, 30, 55);
     font-size: 25px;
     margin: 0px 90px;
-    margin-bottom: 329px;
+    margin-bottom: 400px;
     font-family: "arial",serif;
 }
 /*---------------------------------------------------------------------------------------------------------------*/
@@ -190,7 +218,6 @@ main {
 .nav-arrow-right {
     right: 0;
 }
-
 /*-------------------------------------------------------------------------------------------------------------*/
 
 .margin_slider {
