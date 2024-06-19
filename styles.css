@@ -1,12 +1,12 @@
 main {
-    background-color: #FAF7F7;
+    background-color: #EAEAEB;
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
 footer {
-    background-color: rgb(32, 30, 55);
+    background-color: #15044B;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,20 +76,19 @@ footer {
 
 .button_superior_left_custon {
     display: flex;         
-    padding: 8px 40px;       
+    padding: 8px 60px;       
     text-align: center;       
     text-decoration: none;    
     font-size: 25px;          
     margin: 0px 0px;           
     cursor: pointer;           
     font-family: "Pacifico", cursive;
-    border-radius: 0px 0px 10px 10px;
     color: white;
-    background-color: rgba(218, 57, 43, 1);
+    background-color: #5B54FF;
 }
 .button_superior_left_custon:hover {
     color: white;
-    background-color: rgb(196, 41, 27);
+    background-color: #413db6;
 } 
 
 .button_superior_right_custon {
@@ -108,7 +107,7 @@ footer {
 }
 .button_superior_right_custon:hover {
     color: white;
-    background-color: rgba(218, 57, 43, 1);
+    background-color: #5B54FF;
 } 
 /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -122,7 +121,8 @@ footer {
     position: relative;
 }
 .my_name {
-    color: rgb(32, 30, 55);
+    color: white;
+    /*color: rgb(32, 30, 55);*/
     font-size: 80px;
     font-weight: bold;
     margin: 0px 90px;
@@ -131,7 +131,8 @@ footer {
 .my_formation {
     position: relative;
     z-index: 1;
-    color: rgb(32, 30, 55);
+    /*color: rgb(32, 30, 55);*/
+    color: white;
     font-size: 25px;
     margin: 0px 90px;
     margin-bottom: 400px;
@@ -222,4 +223,21 @@ footer {
 
 .margin_slider {
     margin-top: 500px;
+}
+
+/*------------------------------------------ABOUT ME(index)-------------------------------------------------------*/
+.about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_about_me {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text_about_me {
+    font-size: 20px;
+    padding: 40px;
 }
